@@ -1,0 +1,151 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(45deg , rgb(4, 4, 189) , rgb(2, 2, 72));
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.main .item{
+    text-align: center;
+   display: flex;
+   flex-direction: row;
+   justify-content:center;
+   align-items: center;
+   gap: 4px;
+
+}
+#textarea
+{
+    height: 2rem;
+}
+.item textarea{
+     width: 25%;
+}
+.item button{
+    margin-bottom: 5px;
+    
+}
+.save:hover{
+    background-color: greenyellow;
+
+}
+.save:active{
+      background-color: rgba(145, 241, 0, 0.573);
+}
+
+.delete:hover{
+    background-color: rgb(239, 94, 94)!important;
+}
+.delete:active{
+    background-color: rgb(226, 71, 71);
+}
+.notecontainer{
+
+    width: 100%;
+    flex: 1;
+    border: 2px solid bisque;
+    background-color: aquamarine;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+    color: rgb(240, 240, 240);
+    justify-content: center;
+    align-items:center;
+    overflow: scroll;
+}
+/* .notecontainer2{
+    width: 100%;
+    flex: 1;
+    border: 2px solid bisque;
+    background-color: aquamarine;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+     color: rgb(240, 240, 240);
+  min-height: fit-content;
+overflow-y: auto; 
+} */
+.item-container{
+    width: 100vw;
+     background-color: aquamarine;
+    height: fit-content;
+    background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+      scroll-behavior: smooth;
+    line-height: 1;
+    padding: 8px;
+    min-height: fit-content;
+    display: grid;
+
+    width: fit-content;
+     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    /* justify-content: center; */
+    grid-gap:0%;
+
+      word-wrap: break-word;
+flex-direction: row;
+
+}
+.singlenote{
+margin: 0;
+    padding: 1px;
+    background-color: blanchedalmond;
+    color: blue;
+    border: 1px solid black;
+    width: 70%;
+    /* height: fit-content;
+    min-height: fit-content; */
+    border-radius: 7px;
+    margin-right: 15px;
+  max-height: max-content;
+  overflow: hidden;  /* hides extra content if needed */
+  /* transition: max-height 0.3s ease; */
+
+}
+
+
+
+.singlenote:hover{
+    box-shadow: -2px 4px 5px black;
+    transform: scale(1);
+}
+.singlebutton{
+ border: 1px solid black;
+ color: gold;
+
+}
+.deletebutton{
+/*     
+    margin-left: 85%; */
+  display: inline;
+    border-radius: 50%;
+
+
+}
+.makeitshort {
+  max-height: 10rem;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.deletebutton:hover{
+    box-shadow: -1px 1px black;
+}
+.shorts{
+    border-radius: 50%;
+  
+
+
+   
+}
+.shorts:hover{
+      box-shadow: -1px 1px black;
+}
